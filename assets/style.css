@@ -106,4 +106,20 @@ nav
     justify-content: space-between;
     align-items: center;
 }
+
+nav .search-bar
+{
+    padding: var(--search-padding);
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+}
+
+nav .search-bar input[type="search"]
+{
+    background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: .9rem;
+    color: var(--color-dark);
+}
 /* navbar ends */
