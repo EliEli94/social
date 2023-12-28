@@ -170,7 +170,6 @@ main
     display: grid;
     grid-template-columns: 18vw auto 20vw;
     position: relative;
-    column-gap: 2rem;
 }
 
 /* main left starts */
@@ -325,12 +324,18 @@ aside .menu-item:nth-last-child(2)
 
 /* main-center starts */
 /* stories starts */
+.center-container 
+{
+    max-width: 700px !important;
+    width: 90%;
+    margin: 0 auto;
+}
+
 .stories-wrapper
 {
     display: flex;
     gap: .5rem;
     height: 12rem !important;
-    max-width: 660px;
 }
 
 .stories-wrapper .story
@@ -413,5 +418,117 @@ aside .menu-item:nth-last-child(2)
 }
 /* stories ends */
 
+.main-center .add-post
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .4rem var(--card-padding);
+    border-radius: var(--border-radius);
+    background: var(--color-white);
+    margin-top: 1rem;
+}
+
+.main-center .add-post input[type="text"]
+{
+    justify-self: start;
+    width: 100%;
+    padding-left: 1rem;
+    background: transparent;
+    color: var(--color-dark);
+    margin-right: 1rem;
+}
+
+.main-center .add-post .profile-picture
+{
+    width: 2.8rem;
+}
+
+/* feeds start */
+.feeds .feed
+{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin: 1rem auto;
+    line-height: 1.5;
+    font-size: .85rem;
+}
+
+.feeds .feed .feed-top 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feed .feed-top .user
+{
+    display: flex;
+    gap: 1rem;
+}
+
+.feed .feed-top .edit img
+{
+    width: 1.6rem;
+}
+
+.feed .feed-img
+{
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    margin: .8rem 0;
+}
+
+.feed .action-button
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    margin: 0.6rem;
+}
+
+.action-button span:first-child i
+{
+    font-weight: normal;
+}
+
+.action-button span:nth-child(2) i
+{
+    font-weight: normal;
+}
+
+.bookmark i
+{
+    font-weight: normal;
+}
+
+.liked-by
+{
+    display: flex;
+}
+
+.liked-by span
+{
+    border-radius: 50%;
+    display: block;
+    height: 1.4rem;
+    width: 1.4rem;
+    overflow: hidden;
+    margin-left: -.6rem;
+    border: 2px solid var(--color-white);
+}
+
+.liked-by span:first-child
+{
+    margin: 0;
+}
+
+.liked-by p
+{
+    margin-left: .5rem;
+}
+/* feeds end */
 /* main-center ends */
 /* main section ends */
