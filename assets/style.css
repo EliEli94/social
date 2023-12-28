@@ -237,6 +237,26 @@ aside .notify-counter
 aside .menu-item h3
 {
     margin-left: 1.5rem;
+    font-size: 1rem;
+}
+
+aside .active
+{
+    background: var(--color-light);
+}
+
+aside  .active h3 
+{
+    color: var(--color-primary);
+}
+
+aside  .active::before
+{
+    content: '';
+    display: block;
+    width: .5rem;
+    height: 100%;
+    background: var(--color-primary);
 }
 /* main left ends */
 /* main section ends */
