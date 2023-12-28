@@ -37,7 +37,7 @@ body
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--color-dark);
     background: var(--color-light);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .container
@@ -195,7 +195,6 @@ aside
 {
     margin-top: 1rem;
     border-radius: var(--card-border-radius);
-    overflow: hidden;
 }
 
 aside .menu-item
@@ -257,6 +256,18 @@ aside  .active::before
     width: .5rem;
     height: 100%;
     background: var(--color-primary);
+}
+
+aside .menu-item:first-child
+{
+    overflow: hidden;
+    border-top-left-radius: var(--card-border-radius);
+}
+
+aside .menu-item:nth-last-child(2)
+{
+    overflow: hidden;
+    border-bottom-left-radius: var(--card-border-radius);
 }
 /* main left ends */
 /* main section ends */
