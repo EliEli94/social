@@ -24,6 +24,7 @@
     --border-radius: 2rem;
     --card-border-radius:  1rem;
 
+    --btn-padding: .6rem 2rem;
     --search-padding: .6rem 1rem;
     --card-padding: 1rem;
 }
@@ -54,4 +55,26 @@ img
     aspect-ratio: 1/1;
     border-radius: 50%;
     overflow: hidden;
+}
+
+.btn
+{
+    padding: var(--btn-padding);
+    display: inline-block;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: 300s ease all;
+}
+
+.bnt::hover
+{
+    opacity: 0.75rem;
+}
+
+.bt-primary
+{
+    background: var(--color-primary);
+    color: var(--color-white);
 }
