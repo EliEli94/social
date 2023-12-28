@@ -329,7 +329,8 @@ aside .menu-item:nth-last-child(2)
 {
     display: flex;
     gap: .5rem;
-    height: 12rem;
+    height: 12rem !important;
+    max-width: 660px;
 }
 
 .stories-wrapper .story
@@ -339,6 +340,22 @@ aside .menu-item:nth-last-child(2)
     position: relative;
     border-radius: var(--card-border-radius);
     overflow: hidden;
+}
+
+.stories-wrapper .story:first-child
+{
+    background: var(--color-primary);
+}
+
+.story::before
+{
+    height: 5rem;
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(transparent,var(--color-primary));
+    width: 100%; 
 }
 
 .story .profile-picture
@@ -356,6 +373,9 @@ aside .menu-item:nth-last-child(2)
     text-align: center;
     margin-top: -3rem;
     color: var(--color-white);
+    z-index: 8;
+    position: absolute;
+    width: 100%;
 }
 
 .story>img
@@ -371,22 +391,25 @@ aside .menu-item:nth-last-child(2)
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background: #000;
+    background: var(--color-primary);
     top: 0;
     position: absolute;
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 2rem;
 }
 
 .story .add-story i
 {
     display: block;
-    margin-bottom: 2rem;
     font-size: 1.4rem;
-    margin-top: 2rem;
+    margin-top:  -1rem;
     color: var(--color-white);
+}
+
+.story .add-story p
+{
+    margin-bottom: -7rem;
 }
 /* stories ends */
 
