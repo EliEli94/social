@@ -65,16 +65,45 @@ img
     border-radius: var(--border-radius);
     font-size: 0.9rem;
     font-weight: 400;
-    transition: 300s ease all;
+    transition: 300ms ease all;
 }
 
-.bnt::hover
+.btn:hover
 {
-    opacity: 0.75rem;
+    opacity: 0.75;
 }
 
-.bt-primary
+.btn-primary
 {
     background: var(--color-primary);
     color: var(--color-white);
 }
+
+.text-bold
+{
+    font-weight: 500;;
+}
+
+.text-gray
+{
+    color: var(--color-gray);
+}
+
+/* navbar start */
+nav
+{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    padding: .7rem 0;
+    background: var(--color-white);
+}
+
+.nav-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* navbar ends */
