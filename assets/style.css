@@ -1,0 +1,57 @@
+*, *::before, *::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+:root
+{
+    --color-white: hsl(252,30%,100%);
+    --color-light: hsl(252,30%,90%);
+    --color-gray: hsl(252,30%,60%);
+    --color-primary: hsl(252,75%,60%);
+    --color-secondary: hsl(252,100%,90%);
+    --color-success: hsl(120,95%,60%);
+    --color-danger: hsl(0,95%,60%);
+    --color-dark: hsl(252,30%,15%);
+    --color-black: hsl(252,30%,8%);
+
+    --border-radius: 2rem;
+    --card-border-radius:  1rem;
+
+    --search-padding: .6rem 1rem;
+    --card-padding: 1rem;
+}
+
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-dark);
+    background: var(--color-light);
+    overflow: hidden;
+}
+
+.container
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+img
+{
+    display: block;
+    width: 100%;
+}
+
+.profile-picture
+{
+    width: 3rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
