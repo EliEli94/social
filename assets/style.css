@@ -323,4 +323,69 @@ aside .menu-item:nth-last-child(2)
 }
 /* Notification box ends */
 
+/* main-center starts */
+/* stories starts */
+.stories-wrapper
+{
+    display: flex;
+    gap: .5rem;
+    height: 12rem;
+}
+
+.stories-wrapper .story
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.story .profile-picture
+{
+    position: absolute;
+    top: .6rem;
+    left: .2rem;
+    width: 2.4rem;
+    border: 2px dashed var(--color-primary);
+    z-index: 8;
+}
+
+.story p
+{
+    text-align: center;
+    margin-top: -3rem;
+    color: var(--color-white);
+}
+
+.story>img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story .add-story
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    top: 0;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.story .add-story i
+{
+    display: block;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+/* stories ends */
+
+/* main-center ends */
 /* main section ends */
