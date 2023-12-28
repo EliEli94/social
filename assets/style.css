@@ -262,12 +262,14 @@ aside .menu-item:first-child
 {
     overflow: hidden;
     border-top-left-radius: var(--card-border-radius);
+    border-top-right-radius: var(--card-border-radius);
 }
 
 aside .menu-item:nth-last-child(2)
 {
     overflow: hidden;
     border-bottom-left-radius: var(--card-border-radius);
+    border-bottom-right-radius: var(--card-border-radius);
 }
 
 .btn-lg
@@ -288,6 +290,7 @@ aside .menu-item:nth-last-child(2)
     border-radius: var(--border-radius);
     padding: var(--card-padding);
     box-shadow: var(--color-primary) 0 0 1rem;
+    display: none;
 }
 
 .notification-box::before
@@ -305,6 +308,18 @@ aside .menu-item:nth-last-child(2)
 {
     display: flex;
     gap: 1rem;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+.notification-box .profile-picture
+{
+    width: 2.6rem;
+}
+
+.notification-box>div small
+{
+    display: block;
 }
 /* Notification box ends */
 
