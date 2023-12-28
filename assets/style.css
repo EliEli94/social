@@ -213,7 +213,7 @@ aside .menu-item:hover
     background: var(--color-light);
 }
 
-aside .menu-item img
+aside .menu-item span img
 {
     width: 1.8rem;
     margin-left: 2rem;
@@ -269,5 +269,43 @@ aside .menu-item:nth-last-child(2)
     overflow: hidden;
     border-bottom-left-radius: var(--card-border-radius);
 }
+
+.btn-lg
+{
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
 /* main left ends */
+/* Notification box starts */
+.notification-box
+{
+    width: 30rem;
+    left: 110%;
+    position: absolute;
+    background: var(--color-white);
+    border-radius: var(--border-radius);
+    padding: var(--card-padding);
+    box-shadow: var(--color-primary) 0 0 1rem;
+}
+
+.notification-box::before
+{
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    background: var(--color-white);
+    position: absolute;
+    left: -.6rem;
+    transform: rotate(45deg);
+}
+
+.notification-box>div
+{
+    display: flex;
+    gap: 1rem;
+}
+/* Notification box ends */
+
 /* main section ends */
