@@ -13,7 +13,7 @@
 {
     --color-white: hsl(252,30%,100%);
     --color-light: hsl(252,30%,90%);
-    --color-gray: hsl(252,30%,60%);
+    --color-gray: hsl(252,15%,60%);
     --color-primary: hsl(252,75%,60%);
     --color-secondary: hsl(252,100%,90%);
     --color-success: hsl(120,95%,60%);
@@ -55,6 +55,11 @@ img
     aspect-ratio: 1/1;
     border-radius: 50%;
     overflow: hidden;
+}
+
+.profile-picture:hover
+{
+    opacity: 0.75;
 }
 
 .btn
@@ -121,5 +126,31 @@ nav .search-bar input[type="search"]
     margin-left: 1rem;
     font-size: .9rem;
     color: var(--color-dark);
+}
+
+nav .search-bar input[type="search"]::placeholder
+{
+    color: var(--color-gray);
+}
+
+.add-post
+{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo h3
+{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    user-select: none; /*does not allow selections*/
+    color: var(--color-dark);
+}
+
+.logo span
+{
+    color: var(--color-danger);
 }
 /* navbar ends */
