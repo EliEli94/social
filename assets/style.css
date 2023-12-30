@@ -453,6 +453,7 @@ aside .menu-item:nth-last-child(2)
     margin: 1rem auto;
     line-height: 1.5;
     font-size: .85rem;
+    position: relative;
 }
 
 .feeds .feed .feed-top 
@@ -460,6 +461,8 @@ aside .menu-item:nth-last-child(2)
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+    position: relative;
 }
 
 .feed .feed-top .user
@@ -487,6 +490,7 @@ aside .menu-item:nth-last-child(2)
     align-items: center;
     font-size: 1.4rem;
     margin: 0.6rem;
+    cursor: pointer;
 }
 
 .action-button span:first-child i
@@ -528,6 +532,49 @@ aside .menu-item:nth-last-child(2)
 .liked-by p
 {
     margin-left: .5rem;
+}
+
+.edit .edit-menu
+{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    right: 0;
+    box-shadow: 0 0 .2rem var(--color-primary);
+    top: 2.4rem;
+    transform: scale(0);
+    transition: 300ms all ease;
+    transform-origin: top right;
+}
+
+
+.edit:hover .edit-menu
+{
+    transform: scale(1);
+}
+
+.edit .edit-menu li
+{
+    display: flex;
+    gap: .7rem;
+    font-size: 1rem;
+    align-items: center;
+    color: var(--color-gray);
+    transition: 300ms ease all;
+}
+
+.edit .edit-menu li:hover
+{
+    color: var(--color-dark);
+}
+
+.edit .edit-menu li:last-child:hover
+{
+    color: var(--color-danger);
 }
 /* feeds end */
 /* main-center ends */
