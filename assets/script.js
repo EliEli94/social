@@ -7,6 +7,7 @@ let swiper = new Swiper(".mySwiper",{
 // window scroll
 window.addEventListener('scroll',()=>{
     document.querySelector('.profile-pop-up').style.display='none'
+    document.querySelector('.add-post-pop-up').style.display='none'
 })
 // profile pop-up
 document.querySelectorAll('#my-profile-picture').forEach(AllProfile => {
@@ -25,4 +26,9 @@ document.querySelector('#profile-upload').addEventListener('change',()=>{
     document.querySelectorAll('#my-profile-picture img').forEach(AllMyProfileImg=>{
         AllMyProfileImg.src = URL.createObjectURL(document.querySelector('#profile-upload').files[0])
     })
+})
+
+// add post
+document.querySelector('#create-lg').addEventListener('click',()=>{
+    document.querySelector('.add-post-pop-up').style.display='flex'
 })

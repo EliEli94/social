@@ -600,7 +600,7 @@ aside .menu-item:nth-last-child(2)
     display: flex;
 }
 
-.profile-pop-up-box
+.pop-up-box
 {
     width: 400px;
     height: 460px;
@@ -639,5 +639,56 @@ aside .menu-item:nth-last-child(2)
     margin-left: .5rem;
     color: var(--color-white);
     font-size: 1.6rem;
+}
+
+/* .add-post-pop-up
+{
+    display: flex;
+    gap: 1rem;
+}   */
+
+.post-title
+{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.post-title input
+{
+    border-radius: var(--card-border-radius);
+    background: var(--color-light);
+    padding: var(--card-padding);
+    font-size: 1.1rem;
+}
+
+.post-title input:focus
+{
+    border: 1px solid var(--color-gray);
+}
+
+.post-img
+{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.post-img input[type='file']
+{
+    display: none;
+}
+
+.post-img img
+{
+    width: 6rem;
+    margin: auto;
+}
+
+.post-img .feed-upload-btn
+{
+    padding: var(--card-padding);
+    border: 2px dashed var(--color-dark);
+    font-weight: bold;
 }
 /* pop ups section ends */
