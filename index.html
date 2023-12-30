@@ -214,7 +214,7 @@
                         <div class="feed">
                             <div class="feed-top">
                                 <div class="user">
-                                    <div class="profile-picture">
+                                    <div class="profile-picture" id="my-profile-picture">
                                         <img src="./assets/images/img/profile-1.jpeg" alt="">
                                     </div>
                                     <div class="info">
@@ -252,6 +252,9 @@
                                 <p><b>John Wiliams</b> and <b>77 others commented</b></p>
                             </div>
                             <div class="caption">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quos?
+                                </div>
                                 <p><b>Lana White</b> Lorem ipsum dolor sit amet consectetur adipisicing.
                                 <span class="harsh-tag">#lifestyle</span></p>
                             </div>
@@ -300,6 +303,9 @@
                                 <p><b>John Wiliams</b> and <b>77 others commented</b></p>
                             </div>
                             <div class="caption">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quos?
+                                </div>
                                 <p><b>Lana White</b> Lorem ipsum dolor sit amet consectetur adipisicing.
                                 <span class="harsh-tag">#lifestyle</span></p>
                             </div>
@@ -329,7 +335,9 @@
                                 </div>
                             </div>
                             <div class="feed-img">
-                                <h2>Hello World I'm Livingstone </br>from Ghana.</h2>
+                                <div class="title">
+                                    <h2>Hello World I'm Livingstone </br>from Ghana.</h2>
+                                </div>
                             </div>
                             <div class="action-button">
                                 <div class="interaction-button">
@@ -396,6 +404,9 @@
                                 <p><b>John Wiliams</b> and <b>77 others commented</b></p>
                             </div>
                             <div class="caption">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quos?
+                                </div>
                                 <p><b>Lana White</b> Lorem ipsum dolor sit amet consectetur adipisicing.
                                 <span class="harsh-tag">#lifestyle</span></p>
                             </div>
@@ -419,13 +430,40 @@
 
     <!-- pop ups start -->
     <div class="pop-up profile-pop-up">
-        <div class="pop-up-box">
+       <div>
+        <div class="pop-up-box profile-pop-up-box">
             <h1>Beg Joker</h1>
             <p>@thebegjoker</p>
-            <img src="./assets/images/img/profile-1.jpeg" alt="">
+            <div id="my-profile-picture">
+                <img src="./assets/images/img/profile-1.jpeg" alt="">
+            </div>
             <label class="btn btn-primary btn-lg" for="profile-upload">Update Profile Picture</label>
             <input type="file" name="" accept="image/jpg, image/png, image/jpeg" id="profile-upload">
             <button class="btn btn-primary btn-lg">Log Out</button>
+        </div>
+        <span class="close"><i class="fa fa-close"></i></span>
+       </div>
+    </div>
+
+    <div class="pop-up add-post-pop-up">
+        <div>
+            <form class="pop-up-box add-post-pop-up">
+                <h1>Add New Post</h1>
+                <div class="row post-title">
+                    <label for="">title</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="row post-title">
+                    <img src="./assets/images/img/profile-1.jpeg" alt="">
+                    <label class="feed-upload-btn" for="feed-pic-upload">
+                        <span><i class="fa fa-add"></i></span>
+                         Upload A Picture
+                    </label>
+                    <input type="file" name="" accept="image/jpg, image/png, image/jpeg" id="feed-pic-upload">
+                    <input type="submit" class="btn btn-primary btn-lg">Add Post</input>
+                </div>
+            </form>
+            <span class="close"><i class="fa fa-close"></i></span>
         </div>
     </div>
     <!-- pop ups end -->

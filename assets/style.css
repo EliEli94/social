@@ -579,3 +579,65 @@ aside .menu-item:nth-last-child(2)
 /* feeds end */
 /* main-center ends */
 /* main section ends */
+
+/* pop ups section starts */
+.pop-up
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    z-index: 9;
+    background: #000000ba;
+    display: none;
+}
+
+.pop-up>div
+{
+    display: flex;
+}
+
+.profile-pop-up-box
+{
+    width: 400px;
+    height: 460px;
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-pop-up-box>div
+{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+#profile-upload
+{
+    display: none;
+}
+
+.profile-pop-up-box h1
+{
+    line-height: 1.8;
+}
+
+.pop-up .close
+{
+    margin-top: -.5rem;
+    margin-left: .5rem;
+    color: var(--color-white);
+    font-size: 1.6rem;
+}
+/* pop ups section ends */
