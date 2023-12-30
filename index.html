@@ -20,8 +20,8 @@
                 <input type="search" name="" id="" placeholder="Search for creators">
             </div>
             <div class="add-post">
-                <label for="add-post" class="btn btn-primary">Add Post</label>
-                <div class="profile-picture" id="my-profile">
+                <label for="add-post" class="btn btn-primary mini-btn">Add Post</label>
+                <div class="profile-picture" id="my-profile-picture">
                     <img src="assets/images/img/profile-1.jpeg" alt="">
                 </div>
             </div>
@@ -134,10 +134,11 @@
                                     <div class="profile-picture" id="my-profile-picture">
                                         <img src="./assets/images/img/profile-1.jpeg" alt="">
                                     </div>
-                                    <div class="add-story">
+                                    <label class="add-story" for="add-story">
                                         <i class="fa fa-add"></i>
                                         <p>Add Your </br>Story</p>
-                                    </div>
+                                    </label>
+                                    <input type="file" accept="image/jpeg,image/png,image/jpg" id="add-story">
                                 </div>
                                 <div class="story swiper-slide">
                                     <img src="./assets/images/img/st2.jpeg" alt="">
@@ -201,7 +202,7 @@
                     <!-- Stories end -->
     
                     <!-- posts starts -->
-                    <form class="add-post">
+                    <form class="add-post input-post">
                         <div class="profile-picture" id="my-profile-picture">
                             <img src="./assets/images/img/profile-1.jpeg" alt="">
                         </div>
@@ -256,7 +257,7 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quos?
                                 </div>
                                 <p><b>Lana White</b> Lorem ipsum dolor sit amet consectetur adipisicing.
-                                <span class="harsh-tag">#lifestyle</span></p>
+                                <span class="hash-tag">#lifestyle</span></p>
                             </div>
 
                             <div class="comments text-gray">
@@ -307,7 +308,7 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quos?
                                 </div>
                                 <p><b>Lana White</b> Lorem ipsum dolor sit amet consectetur adipisicing.
-                                <span class="harsh-tag">#lifestyle</span></p>
+                                <span class="hash-tag">#lifestyle</span></p>
                             </div>
 
                             <div class="comments text-gray">
@@ -357,7 +358,7 @@
                             </div>
                             <div class="caption">
                                 <p><b>Lana White</b> Lorem ipsum dolor sit amet consectetur adipisicing.
-                                <span class="harsh-tag">#lifestyle</span></p>
+                                <span class="hash-tag">#lifestyle</span></p>
                             </div>
 
                             <div class="comments text-gray">
@@ -408,7 +409,7 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quos?
                                 </div>
                                 <p><b>Lana White</b> Lorem ipsum dolor sit amet consectetur adipisicing.
-                                <span class="harsh-tag">#lifestyle</span></p>
+                                <span class="hash-tag">#lifestyle</span></p>
                             </div>
 
                             <div class="comments text-gray">
@@ -423,7 +424,23 @@
                 <!-- posts end -->
             </div>
             <div class="main-right">
-
+                <div class="messages">
+                    <div class="messages">
+                        <div class="message-top">
+                            <h4>Messages</h4><i class="fa fa-edit"></i>
+                        </div>
+                        <div class="message-search-bar">
+                            <i class="fa fa-search">
+                                <input type="search" placeholder="Search messages" id="message-search">
+                            </i>
+                        </div>
+                        <div class="message-categories">
+                            <h6 class="active">Primary</h6>
+                            <h6>General</h6>
+                            <h6 class="message-request">Requests(2)</h6>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -451,10 +468,10 @@
                 <h1>Add New Post</h1>
                 <div class="row post-title">
                     <label for="">title</label>
-                    <input type="text" name="" id="add-post">
+                    <input type="text" name="" id="add-post" placeholder="What's on your mind?">
                 </div>
                 <div class="row post-img">
-                    <img src="" alt="">
+                    <img src="" alt="" id="postImg">
                     <label class="feed-upload-btn" for="feed-pic-upload">
                         <span><i class="fa fa-add"></i></span>
                          Upload A Picture
