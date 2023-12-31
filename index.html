@@ -50,8 +50,8 @@
                     <a href="#" class="menu-item">
                         <span><img src="./assets/images/svg/joystick.svg" alt=""></span><h3>Explore</h3>
                     </a>
-                    <a href="#" class="menu-item">
-                        <span><img src="./assets/images/svg/bell.svg" alt=""></span><small class="notify-counter">3+</small><h3>Notifications</h3>
+                    <a href="#" class="menu-item" id="notify-box">
+                        <span><img src="./assets/images/svg/bell.svg" alt=""></span><small class="notify-counter" id="nt-counter">3+</small><h3>Notifications</h3>
 
                         <!-- Notification box starts -->
                         <div class="notification-box">
@@ -103,8 +103,8 @@
                         </div>
                         <!-- Notification box ends -->
                     </a>
-                    <a href="#" class="menu-item">
-                        <span><img src="./assets/images/svg/chat-left-dots.svg" alt=""></span><small class="notify-counter">3+</small><h3>Message</h3>
+                    <a href="#" class="menu-item" id="message-box">
+                        <span><img src="./assets/images/svg/chat-left-dots.svg" alt=""></span><small class="notify-counter" id="mg-counter">3+</small><h3>Message</h3>
                     </a>
                     <a href="#" class="menu-item">
                         <span><img src="./assets/images/svg/bookmarks.svg" alt=""></span><h3>Book Marks</h3>
@@ -212,7 +212,7 @@
 
                     <!-- feed starts -->
                     <div class="feeds">
-                        <div class="feed">
+                        <div class="feed my-feed">
                             <div class="feed-top">
                                 <div class="user">
                                     <div class="profile-picture" id="my-profile-picture">
@@ -452,11 +452,11 @@
                     </div>
                     <div class="message">
                         <div class="profile-picture">
-                            <img src="./assets/images/img/m1.jpg" alt="">
+                            <img src="./assets/images/img/m2.png" alt="">
                             <div class="green-active"></div>
                         </div>
                         <div class="message-body">
-                            <h5>Alexa Lisa</h5>
+                            <h5>Ben charles</h5>
                             <p class="text-gray">
                                 Lorem ipsum dolor sit amet.
                             </p>
@@ -464,11 +464,12 @@
                     </div>
                     <div class="message">
                         <div class="profile-picture">
-                            <img src="./assets/images/img/m1.jpg" alt="">
+                            <img src="./assets/images/img/m5.jpg" alt="">
                             <div class="green-active"></div>
                         </div>
                         <div class="message-body">
-                            <h5>Alexa Lisa</h5>
+                            <h5>Alexander James
+                            </h5>
                             <p class="text-gray">
                                 Lorem ipsum dolor sit amet.
                             </p>
@@ -494,10 +495,10 @@
                             </div>
                         </div>
                         <div class="action">
-                            <div class="btn btn-primary">
+                            <div class="btn btn-primary" id="accept">
                                 Accept
                             </div>
-                            <div class="btn btn-danger">
+                            <div class="btn btn-danger" id="delete">
                                 Delete
                             </div>
                         </div>
@@ -505,22 +506,22 @@
                     <div class="request">
                         <div class="info">
                             <div class="profile-picture">
-                                <img src="./assets/images/img/f1.jpg" alt="">
+                                <img src="./assets/images/img/f4.jpg" alt="">
                             </div>
                             <div>
-                                <h5>Mark Daniel</h5>
+                                <h5>Elex Sam</h5>
                                 <p class="text-gray">
-                                    4 mutual friends
+                                    2 mutual friends
                                 </p>
                                 <small class="text-gray alert">Friend request accepted</small>
                                 
                             </div>
                         </div>
                         <div class="action">
-                            <div class="btn btn-primary">
+                            <div class="btn btn-primary" id="accept">
                                 Accept
                             </div>
-                            <div class="btn btn-danger">
+                            <div class="btn btn-danger" id="delete">
                                 Delete
                             </div>
                         </div>
@@ -528,22 +529,22 @@
                     <div class="request">
                         <div class="info">
                             <div class="profile-picture">
-                                <img src="./assets/images/img/f1.jpg" alt="">
+                                <img src="./assets/images/img/f2.jpg" alt="">
                             </div>
                             <div>
-                                <h5>Mark Daniel</h5>
+                                <h5>Addo Daniel</h5>
                                 <p class="text-gray">
-                                    4 mutual friends
+                                    6 mutual friends
                                 </p>
                                 <small class="text-gray alert">Friend request accepted</small>
                                 
                             </div>
                         </div>
                         <div class="action">
-                            <div class="btn btn-primary">
+                            <div class="btn btn-primary" id="accept">
                                 Accept
                             </div>
-                            <div class="btn btn-danger">
+                            <div class="btn btn-danger" id="delete">
                                 Delete
                             </div>
                         </div>
@@ -588,6 +589,61 @@
                     <input type="submit" class="btn btn-primary btn-lg">Add Post</input>
                 </div>
             </form>
+            <span class="close"><i class="fa fa-close"></i></span>
+        </div>
+    </div>
+
+    <!-- customize theme pop up -->
+    <div class="pop-up customize-theme">
+        <div>
+            <div class="pop-up-box customize-theme-pop-up-box">
+                <h1>customize Your Theme</h1>
+                <p>Manage your font size, color and background</p>
+                    <!-- font size -->
+                <div class="font-size">
+                    <h4>Font Size</h4>
+                    <div>
+                        <div>
+                            <h6>Aa</h6>
+                        </div>
+                        <div class="choose-size">
+                            <span class="font-size-1"></span>
+                            <span class="font-size-2 active"></span>
+                            <span class="font-size-3"></span>
+                            <span class="font-size-4"></span>
+                            <span class="font-size-5"></span>
+                        </div>
+                        <div>
+                            <h3>Aa</h3>
+                        </div>
+                    </div>
+                </div>
+                    <!-- Font color -->
+                <div class="colors">
+                    <h4>Color</h4>
+                    <div class="choose-color">
+                        <span class="color-1 active"></span>
+                        <span class="color-2"></span>
+                        <span class="color-3"></span>
+                        <span class="color-4"></span>
+                        <span class="color-5"></span>
+                    </div>
+                </div>
+                <!-- background color -->
+                <div class="background">
+                    <h4>Background</h4>
+                    <div class="choose-bg">
+                        <div class="bg1 active">
+                            <span></span>
+                            <h5>Light</h5>
+                        </div>
+                        <div class="bg2">
+                            <span></span>
+                            <h5>Dark</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <span class="close"><i class="fa fa-close"></i></span>
         </div>
     </div>

@@ -8,6 +8,8 @@ let swiper = new Swiper(".mySwiper",{
 window.addEventListener('scroll',()=>{
     document.querySelector('.profile-pop-up').style.display='none'
     document.querySelector('.add-post-pop-up').style.display='none'
+    document.querySelector('.customize-theme').style.display='none'
+    document.querySelector('.notification-box').style.display='none'
 })
 // profile pop-up
 document.querySelectorAll('#my-profile-picture').forEach(AllProfile => {
@@ -20,6 +22,7 @@ document.querySelectorAll('.close').forEach(AllCloser => {
     AllCloser.addEventListener('click',()=>{
         document.querySelector('.profile-pop-up').style.display='none'
         document.querySelector('.add-post-pop-up').style.display='none'
+        document.querySelector('.customize-theme').style.display='none'
     })
 });
 
@@ -57,3 +60,45 @@ document.querySelectorAll('.action-button span:first-child i').forEach(liked=>{
 setTimeout(() => {
     document.querySelector('.input-post').classList.remove('boxshadow1')
 }, 3000);
+
+// Asides
+let menuItem = document.querySelectorAll('.menu-item');
+
+const removeActive = ()=>{
+    menuItem.forEach(item=>{
+        item.classList.remove('active');
+})
+}
+menuItem.forEach(item=>{
+    item.addEventListener('click',()=>{
+        removeActive();
+        item.classList.add('active');
+        document.querySelector('.notification-box').style.display='none';
+    })
+})
+
+document.querySelector('#notify-box').addEventListener('click',()=>{
+    document.querySelector('.notification-box').style.display='block';
+    document.querySelector('#nt-counter').style.display='none';
+})
+
+document.querySelector('#message-box').addEventListener('click',()=>{
+    document.querySelector('.messages').classList.toggle('boxshadow1')
+    document.querySelector('#mg-counter').style.display='none';
+})
+
+// friend rquest
+let accept = document.querySelectorAll('#accept');
+let dlete = document.querySelectorAll('#delete');
+
+accept.forEach(accept=>{
+    accept.addEventListener('click',()=>{
+        accept.parentElement.style.display='none';
+        accept.parentElement.parentElement.querySelector('.alert').style.display='block'
+    })
+});
+dlete.forEach(del => {
+    del.addEventListener('click',()=>{
+        del.parentElement.parentElement.style.display='none'
+    })
+});
